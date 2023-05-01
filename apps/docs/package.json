@@ -6,13 +6,12 @@
     "dev": "next dev --port 3001",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx ."
   },
   "dependencies": {
     "next": "latest",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "ui": "workspace:*"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@types/node": "^17.0.12",
