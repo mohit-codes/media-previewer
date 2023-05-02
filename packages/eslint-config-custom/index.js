@@ -9,6 +9,7 @@ module.exports = {
     "kentcdodds",
     "kentcdodds/react",
     "plugin:jsx-a11y/recommended",
+    "plugin:jsdoc/recommended",
   ],
   rules: {
     "@next/next/no-html-link-for-pages": "off",
