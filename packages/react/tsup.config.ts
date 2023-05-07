@@ -1,9 +1,7 @@
-import type { Options } from 'tsup'
+import { defineConfig } from "tsup";
 
-const config: Options = {
-    entry: ['index.tsx'],
-    dts: true,
-    format: ['iife', 'cjs', 'esm']
-}
-
-export default config
+export default defineConfig({
+  entry: ["index.tsx"],
+  dts: true,
+  format: ["iife", "cjs", "esm"],
+});
