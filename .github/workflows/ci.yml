@@ -11,7 +11,7 @@ on:
 
 jobs:
   ci:
-  name: "Install -> Lint -> Test -> Build"
+  - name: "Install -> Lint -> Test -> Build"
    runs-on: ubuntu-latest
    strategy:
      matrix:
