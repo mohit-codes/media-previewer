@@ -1,26 +1,26 @@
 {
-    "name": "@media-previewer/react",
-    "version": "1.0.0",
-    "main": "dist/index.js",
-    "license": "MIT",
-    "description": "React component for @media-previewer",
-    "packageManager": "pnpm@7.15.0",
-    "scripts": {
-        "build": "tsup src/index.ts",
-        "start": "pnpm run build -- --watch",
-        "lint": "eslint --ext .js,.jsx,.ts,.tsx . "
-    },
-    "devDependencies": {
-        "eslint": "^7.32.0",
-        "eslint-config-custom": "workspace:*",
-        "tsconfig": "workspace:*",
-        "tsup": "^6.7.0",
-        "typescript": "^5.0.4"
-    },
-    "exports": {
-        "default": "./dist/index.cjs",
-        "import": "./dist/index.mjs",
-        "require": "./dist/index.cjs",
-        "node": "./dist/index.cjs"
-    }
+  "name": "@media-previewer/react",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "description": "React component for @media-previewer",
+  "packageManager": "pnpm@7.15.0",
+  "scripts": {
+    "build": "tsup src/index.ts",
+    "start": "pnpm run build -- --watch",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx . "
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-custom": "workspace:*",
+    "tsconfig": "workspace:*",
+    "tsup": "^6.7.0",
+    "typescript": "^5.0.4"
+  },
+  "exports": {
+    "default": "./dist/index.cjs",
+    "import": "./dist/index.mjs",
+    "require": "./dist/index.cjs",
+    "node": "./dist/index.cjs"
+  }
 }
