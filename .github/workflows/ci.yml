@@ -15,24 +15,24 @@ jobs:
         node-version:
           - 16.x
 
-  name: 'Install-Lint-Test-Build'
-  steps:
-    - name: Checkout
-      uses: actions/checkout@v3
-      with:
-        fetch-depth: 0
-    - name: Install pnpm (pnpm 7)
-      uses: pnpm/action-setup@v2.2.4
-      with:
-        version: 7
-    - name: Set node version to ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: pnpm
-    - name: Install dependencies
-      run: pnpm install
-    - name: Lint
-      run: pnpm lint
-    - name: Build
-      run: pnpm build
+    name: 'Install-Lint-Test-Build'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Install pnpm (pnpm 7)
+        uses: pnpm/action-setup@v2.2.4
+        with:
+          version: 7
+      - name: Set node version to ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: pnpm
+      - name: Install dependencies
+        run: pnpm install
+      - name: Lint
+        run: pnpm lint
+      - name: Build
+        run: pnpm build
