@@ -5,7 +5,12 @@
   "compilerOptions": {
     "jsx": "react-jsx",
     "lib": ["ES2015"],
-    "module": "ESNext",
-    "target": "es6"
+    "skipLibCheck": true,
+    "target": "ES2019",
+    "module": "esnext",
+    "noImplicitAny": true,
+    "strictBindCallApply": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true
   }
 }
