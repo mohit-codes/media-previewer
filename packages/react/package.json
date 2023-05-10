@@ -6,7 +6,7 @@
   "description": "React component for @media-previewer",
   "packageManager": "pnpm@7.15.0",
   "scripts": {
-    "build": "tsup src/index.ts",
+    "build": "tsup index.tsx",
     "start": "pnpm run build -- --watch",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx . "
   },
