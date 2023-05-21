@@ -1,0 +1,22 @@
+.preview-dialog__wrapper {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.preview-dialog__overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
+}
+
+.preview-dialog__header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 2.875rem;
+}
