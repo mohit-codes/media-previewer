@@ -26,7 +26,11 @@
     "turbo": "latest"
   },
   "lint-staged": {
-    "*.{js,ts,tsx}": "eslint --cache --fix",
-    "*.{js,ts,md,json}": "prettier --write"
+    "*.{js,ts,tsx}": [
+      "prettier --write",
+      "eslint --cache --fix",
+      "git add --force"
+    ],
+    "*.{md,json}": "prettier --write"
   }
 }
