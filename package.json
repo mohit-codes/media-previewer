@@ -11,8 +11,8 @@
     "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "run-s lint:*",
-    "lint:eslint": "eslint --ext .js,.jsx,.ts,.tsx . --ignore-path .gitignore",
     "lint:prettier": "prettier \"**/*.{ts,tsx,md,json,js,cjs}\" --check --ignore-path .gitignore --loglevel warn",
+    "lint:eslint": "eslint --ext .js,.jsx,.ts,.tsx . --ignore-path .gitignore",
     "format": "prettier --write \"**/*.{ts,tsx,md,json,js,cjs}\"",
     "prepare": "husky install"
   },
@@ -28,8 +28,7 @@
   "lint-staged": {
     "*.{js,ts,tsx}": [
       "prettier --write",
-      "eslint --cache --fix",
-      "git add --force"
+      "eslint --cache --fix"
     ],
     "*.{md,json}": "prettier --write"
   }

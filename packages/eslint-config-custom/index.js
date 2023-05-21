@@ -1,5 +1,5 @@
 /**
- * @type {import("eslint").Linter.Config}
+ * @type {import("eslint").Linter.Config} eslint configuration
  */
 module.exports = {
   extends: [
@@ -92,5 +92,6 @@ module.exports = {
         ]
       }
     }
-  ]
+  ],
+  ignorePatterns: ['**/dist/**', '**/build/**']
 };

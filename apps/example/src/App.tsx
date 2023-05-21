@@ -1,7 +1,7 @@
 import PreviewDialogExample from './PreviewDialogExample';
 
 /**
- *
+ * @returns {import('react').JSX.Element} jsx element
  */
 function App() {
   return (

@@ -1,7 +1,7 @@
 import { PreviewDialog } from '@media-previewer/react';
 
 const PreviewDialogExample = () => {
-  return <PreviewDialog  />;
+  return <PreviewDialog />;
 };
 
 export default PreviewDialogExample;
