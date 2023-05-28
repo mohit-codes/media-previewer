@@ -1,3 +1,6 @@
+/**
+ * @returns {import('react').JSX.Element} entire docs application
+ */
 export default function Docs() {
   return (
     <div>
