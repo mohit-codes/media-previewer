@@ -11,6 +11,11 @@ const baseContentClassName = 'preview-dialog__content';
 
 export type PreviewDialogProps = PropsWithChildren<{
   /**
+   * @param visible
+   * whether preview is visible or not
+   */
+  visible: boolean;
+  /**
    * @param wrapperClassName
    */
   wrapperClassName?: string;
@@ -34,23 +39,27 @@ const PreviewDialog: React.FC<PreviewDialogProps> = ({
   overlayClassName,
   headerClassName,
   contentClassName,
-  children
+  children,
+  visible
 }) => {
-  return ReactDOM.createPortal(
-    <div className={classNames(baseWrapperClassName, wrapperClassName)}>
-      <div className={classNames(baseOverlayClassName, overlayClassName)} />
-      <header className={classNames(baseHeaderClassName, headerClassName)} />
-      <main className={classNames(baseContentClassName, contentClassName)}>{children}</main>
-    </div>,
-    document.body
-  );
+  return visible
+    ? ReactDOM.createPortal(
+        <div className={classNames(baseWrapperClassName, wrapperClassName)}>
+          <div className={classNames(baseOverlayClassName, overlayClassName)} />
+          <header className={classNames(baseHeaderClassName, headerClassName)} />
+          <main className={classNames(baseContentClassName, contentClassName)}>{children}</main>
+        </div>,
+        document.body
+      )
+    : null;
 };
 
 PreviewDialog.propTypes = {
   wrapperClassName: PropTypes.string,
   overlayClassName: PropTypes.string,
   headerClassName: PropTypes.string,
-  contentClassName: PropTypes.string
+  contentClassName: PropTypes.string,
+  visible: PropTypes.bool.isRequired
 };
 
 export default PreviewDialog;

@@ -1,7 +1,7 @@
-import { PreviewDialog } from '@media-previewer/react';
+// import { PreviewDialog } from '@media-previewer/react';
 
-const PreviewDialogExample = () => {
-  return <PreviewDialog />;
-};
+// const PreviewDialogExample = () => {
+//   return <PreviewDialog />;
+// };
 
-export default PreviewDialogExample;
+// export default PreviewDialogExample;
